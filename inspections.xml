@@ -211,7 +211,6 @@
   </inspection_tool>
   <inspection_tool class="DefaultNotLastCaseInSwitch" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="Destructure" enabled="true" level="INFO" enabled_by_default="true" />
-  <inspection_tool class="DisjointPackage" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="DollarSignInName" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="DontUsePairConstructor" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="DoubleBraceInitialization" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -278,7 +277,7 @@
   </inspection_tool>
   <inspection_tool class="EmptySynchronizedStatement" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="EnumSwitchStatementWhichMissesCases" enabled="true" level="WARNING" enabled_by_default="true">
-    <option name="ignoreSwitchStatementsWithDefault" value="false" />
+    <option name="ignoreSwitchStatementsWithDefault" value="true" />
   </inspection_tool>
   <inspection_tool class="EnumeratedClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
@@ -297,7 +296,6 @@
     <option name="ignoreCantWrap" value="false" />
   </inspection_tool>
   <inspection_tool class="ExceptionNameDoesntEndWithException" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="ExceptionPackage" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ExpectedExceptionNeverThrown" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ExpectedExceptionNeverThrownTestNG" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ExtendsConcreteCollection" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -856,7 +854,6 @@
   <inspection_tool class="OverridableMethodCallDuringObjectConstruction" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="OverriddenMethodCallDuringObjectConstruction" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PackageDotHtmlMayBePackageInfo" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="PackageInMultipleModules" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PackageInfoWithoutPackage" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PackageJsonMismatchedDependency" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="PackageVisibleField" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -1009,7 +1006,6 @@
     <option name="m_ignorePrimitives" value="false" />
   </inspection_tool>
   <inspection_tool class="StringBufferField" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="StringBufferMustHaveInitialCapacity" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="StringBufferToStringInConcatenation" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="StringConcatenationArgumentToLogCall" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="StringConcatenationInFormatCall" enabled="true" level="WARNING" enabled_by_default="true" />
