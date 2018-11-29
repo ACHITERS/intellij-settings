@@ -35,7 +35,6 @@
   <inspection_tool class="AssertEqualsCalledOnArray" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="AssertEqualsMayBeAssertSame" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="AssertMessageNotString" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="AssertStatement" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="AssertsWithoutMessagesTestNG" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="AssignmentOrReturnOfFieldWithMutableType" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="AssignmentToCatchBlockParameter" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -510,7 +509,6 @@
     <option name="ignoredTypesString" value="java.io.ByteArrayOutputStream,java.io.ByteArrayInputStream,java.io.StringBufferInputStream,java.io.CharArrayWriter,java.io.CharArrayReader,java.io.StringWriter,java.io.StringReader" />
     <option name="insideTryAllowed" value="false" />
   </inspection_tool>
-  <inspection_tool class="IfMayBeConditional" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="IfStatementWithIdenticalBranches" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="IfStatementWithTooManyBranches" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_limit" value="3" />
@@ -755,33 +753,7 @@
   <inspection_tool class="NestingDepth" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_limit" value="5" />
   </inspection_tool>
-  <inspection_tool class="NewClassNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
-    <extension name="AbstractClassNamingConvention" enabled="true">
-      <option name="inheritDefaultSettings" value="true" />
-      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
-      <option name="m_minLength" value="8" />
-      <option name="m_maxLength" value="64" />
-    </extension>
-    <extension name="AnnotationNamingConvention" enabled="true">
-      <option name="inheritDefaultSettings" value="true" />
-      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
-      <option name="m_minLength" value="8" />
-      <option name="m_maxLength" value="64" />
-    </extension>
-    <extension name="ClassNamingConvention" enabled="true" />
-    <extension name="EnumeratedClassNamingConvention" enabled="true">
-      <option name="inheritDefaultSettings" value="true" />
-      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
-      <option name="m_minLength" value="8" />
-      <option name="m_maxLength" value="64" />
-    </extension>
-    <extension name="InterfaceNamingConvention" enabled="true">
-      <option name="inheritDefaultSettings" value="true" />
-      <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
-      <option name="m_minLength" value="8" />
-      <option name="m_maxLength" value="64" />
-    </extension>
-  </inspection_tool>
+  <inspection_tool class="NewClassNamingConventionMerged" />
   <inspection_tool class="NewExceptionWithoutArguments" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="NodeModulesDependencies" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
   <inspection_tool class="NonExceptionNameEndsWithException" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -1019,7 +991,9 @@
   <inspection_tool class="SubtractionInCompareTo" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="SuperTearDownInFinally" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="SuspiciousArrayCast" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="SuspiciousGetterSetter" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="SuspiciousGetterSetter" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="onlyWarnWhenFieldPresent" value="true" />
+  </inspection_tool>
   <inspection_tool class="SuspiciousIndentAfterControlStatement" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="SuspiciousInstanceOfGuard" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="SuspiciousLiteralUnderscore" enabled="true" level="WARNING" enabled_by_default="true" />
