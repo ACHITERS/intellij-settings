@@ -91,10 +91,6 @@
   <inspection_tool class="CallerJS" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="CanSealedSubClassBeObject" enabled="true" level="INFO" enabled_by_default="true" />
   <inspection_tool class="CastConflictsWithInstanceof" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="CastThatLosesPrecision" enabled="true" level="WARNING" enabled_by_default="true">
-    <option name="ignoreIntegerCharCasts" value="false" />
-    <option name="ignoreOverflowingByteCasts" value="false" />
-  </inspection_tool>
   <inspection_tool class="CastToIncompatibleInterface" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="CatchMayIgnoreException" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_ignoreCatchBlocksWithComments" value="false" />
@@ -690,7 +686,9 @@
   <inspection_tool class="LoopStatementThatDoesntLoopJS" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="LoopToCallChain" enabled="true" level="INFO" enabled_by_default="true" />
   <inspection_tool class="LoopWithImplicitTerminationCondition" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="MagicNumber" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="MagicNumber" enabled="true" level="WARNING" enabled_by_default="true">
+    <scope name="Tests" level="WARNING" enabled="false" />
+  </inspection_tool>
   <inspection_tool class="MalformedSetUpTearDown" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ManagedBeanClassInspection" enabled="false" level="ERROR" enabled_by_default="false" />
   <inspection_tool class="MapReplaceableByEnumMap" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -792,7 +790,6 @@
   <inspection_tool class="NotifyWithoutCorrespondingWait" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="NpmUsedModulesInstalled" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
   <inspection_tool class="NullThrown" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="NumericToString" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ObjectEquality" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_ignoreEnums" value="true" />
     <option name="m_ignoreClassObjects" value="false" />
@@ -1054,12 +1051,16 @@
   <inspection_tool class="ThrowsRuntimeException" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="TimeToString" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="TodoComment" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="TooBroadCatch" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="TooBroadCatch" enabled="true" level="WARNING" enabled_by_default="true">
+    <scope name="Tests" level="WARNING" enabled="false" />
+  </inspection_tool>
   <inspection_tool class="TooBroadScope" enabled="false" level="WARNING" enabled_by_default="false">
     <option name="m_allowConstructorAsInitializer" value="false" />
     <option name="m_onlyLookAtBlocks" value="false" />
   </inspection_tool>
-  <inspection_tool class="TooBroadThrows" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="TooBroadThrows" enabled="true" level="WARNING" enabled_by_default="true">
+    <scope name="Tests" level="WARNING" enabled="false" />
+  </inspection_tool>
   <inspection_tool class="TransientFieldInNonSerializableClass" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="TransientFieldNotInitialized" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="TrivialConditionalJS" enabled="false" level="WARNING" enabled_by_default="false" />
